@@ -23,7 +23,7 @@ router.use(function(req,res,next) {
 
 router.get('/', function(req, res) {
 	var chance = new Chance();
-	res.send('your name is now: ' + chance.first({nationality: 'us'}) + '!');
+	res.send('Your name is now: ' + chance.first() + '!');
 });
 
 router.route('/new/*')
